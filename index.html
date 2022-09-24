@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web 5</title>
+
+    <script defer src="/static/index.js"></script>
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/backgrounds.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="content">
+
+    <div class="container">
+        <div class="row min-vh-100 align-content-center">
+            <div class="col-1 col-lg"></div>
+            <div class="col-10 col-lg-4">
+                <div class="card shadow p-5">
+                    <p class="display-6 mb-5">Привет!</p>
+
+                    <form id="calculatorForm">
+                        <div class="mb-3">
+                            <label for="calculator__price" class="form-label">Здесь мне нужна цена товара</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" name="price" id="calculator__price">
+                                <span class="input-group-text">&#8381;</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="calculator__amount" class="form-label">А здесь количество</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" name="amount" id="calculator__amount">
+                                <span class="input-group-text">шт.</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-dark">Посчитать</button>
+                            <input type="number" class="form-control text-end" readonly id="calculator__result">
+                            <span class="input-group-text">&#8381;</span>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-1"></div>
+        </div>
+    </div>
+
+</div>
+
+<div id="bg-canvas" class="canvas"></div>
+
+</body>
+</html>
