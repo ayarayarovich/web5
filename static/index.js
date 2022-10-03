@@ -39,6 +39,6 @@ window.addEventListener("DOMContentLoaded", function() {
             formData[key] = parseInt(formData[key]);
         });
 
-        resultEl.value = formData.price * formData.amount;
+        resultEl.innerHTML = formData.price * formData.amount;
     });
 });
